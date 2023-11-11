@@ -7,7 +7,7 @@
 #-------------------------------------------------------------------
 
 # Read the script to uploaded necessary libraries
-source(file.path(rcodes, "00_load_packages.R"))
+source(file.path(rcodes, "0200_load_packages.R"))
 
 # Read files 
 non_cogn  <- read_sav(file.path(inputData, "ind_25_noncognitive_for_all.sav"))

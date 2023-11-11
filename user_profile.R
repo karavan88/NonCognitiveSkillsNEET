@@ -33,8 +33,9 @@ stopifnot(dir.exists(projectFolder))
 documentation <-  file.path(projectFolder, "00_documentation")
 inputData     <-  file.path(projectFolder, "01_input_data")
 rcodes        <-  file.path(projectFolder, "02_codes")
-outTables     <-  file.path(projectFolder, "03_outputs/0301_tables")  
-outFigures    <-  file.path(projectFolder, "03_outputs/0302_figures")  
+outData       <-  file.path(projectFolder, "03_outputs/0301_data")
+outTables     <-  file.path(projectFolder, "03_outputs/0302_tables")  
+outFigures    <-  file.path(projectFolder, "03_outputs/0303_figures")  
 
 
 stopifnot(dir.exists(documentation))

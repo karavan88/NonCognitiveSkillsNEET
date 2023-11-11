@@ -1,14 +1,14 @@
 #-------------------------------------------------------------------
 # Project: Non-Cognitive Skills of NEET
 # Organization: SFedU Future Skills Research Lab
-# Objective: to produce BFI scores for HSE RLMS indiv data
+# Objective: to produce BFI scores for HSE RLMS individual data
 # Author: Garen Avanesian, Valeria Egorova
 # Date: 10 Nov 2023
 #-------------------------------------------------------------------
 
 
 # Read the script to uploaded necessary libraries and previous script to produce the data
-source(file.path(rcodes, "00_load_packages.R"))
+source(file.path(rcodes, "0200_load_packages.R"))
 source(file.path(rcodes, "0201_data_transformation.R"))
 
 # Replace NAs in the data file for non-cognitive skills
@@ -16,6 +16,12 @@ data_nc <-
   non_cogn%>%
   replace_with_na_all(condition = ~.x %in% c(88888888, 99999996, 99999997, 99999998, 99999999))
 
+openness <- c("o1", "o2", "o3")
+con <- c("c1", "c2", "c3")
+ex <- c("e1", "e2", "e3")
+ag <- c("a1", "a2", "a3")
+neur <- c("n1", "n2", "n3")
+grit <- c("g1", "g2", "g3")
 
 # Calculate BFI scores
 data_non_c <- 
@@ -45,4 +51,8 @@ data_non_c <-
          N = scale(rowMeans(select(., all_of(neur)), na.rm = T),center = TRUE, scale = TRUE),
          G = scale(rowMeans(select(., all_of(grit)), na.rm = T),center = TRUE, scale = TRUE)) %>%
   select(idind,  O, C, E, A, N, G)
+
+
+
+
 
