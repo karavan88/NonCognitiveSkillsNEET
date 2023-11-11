@@ -41,6 +41,7 @@ outFigures    <-  file.path(projectFolder, "03_outputs/0303_figures")
 stopifnot(dir.exists(documentation))
 stopifnot(dir.exists(inputData))
 stopifnot(dir.exists(rcodes))
+stopifnot(dir.exists(outData))
 stopifnot(dir.exists(outTables))
 stopifnot(dir.exists(outFigures))
 
