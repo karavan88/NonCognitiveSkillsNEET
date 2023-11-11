@@ -6,11 +6,6 @@
 # Date: 10 Nov 2023
 #-------------------------------------------------------------------
 
-# Read the script to uploaded necessary libraries
-source(file.path(rcodes, "0200_load_packages.R"))
-source(file.path(rcodes, "0201_data_transformation.R"))
-source(file.path(rcodes, "0202_calculate_bfi_scores.R"))
-
 
 data_neet <- 
   data_hi %>%

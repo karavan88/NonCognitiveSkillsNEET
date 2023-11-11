@@ -7,9 +7,6 @@
 #-------------------------------------------------------------------
 
 
-# Read the script to uploaded necessary libraries and previous script to produce the data
-source(file.path(rcodes, "0200_load_packages.R"))
-source(file.path(rcodes, "0201_data_transformation.R"))
 
 # Replace NAs in the data file for non-cognitive skills
 data_nc <- 
