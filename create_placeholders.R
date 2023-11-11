@@ -30,8 +30,3 @@ add_gitkeep_to_all_subdirs <- function(base_dir) {
 add_gitkeep_to_all_subdirs(dir_path)
 
 
-dir_path <- getwd()
-filename <- "my_file1.txt"
-full_path <- file.path(dir_path, filename)
-
-file.create(full_path)

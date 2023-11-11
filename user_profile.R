@@ -21,6 +21,10 @@ if (USERNAME == "kavanesyan"){
   projectFolder  <- getwd()
 } 
 
+if (USERNAME == "Valery"){
+  projectFolder  <- getwd()
+} 
+
 if (USER == "karavan88"){
   projectFolder  <- getwd()
 } 
